@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lightGrey: rgb(223, 225, 227);
+  --lightBlue: rgb(166, 190, 211);
+  --lightBlue2: rgb(153, 177, 197);
+  --darkBlue: rgb(69, 102, 131);
+  --darkBlue2: rgb(62, 82, 99);
+}
+
+input {
+  padding: 10px 8px;
+  width: 100%;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+}
+
+.title0 {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.title1 {
+  font-size: 40px;
+}
+
+.title2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.description {
+  padding: 10px 8px;
+  border: 1px solid white;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+
+.screenContainer {
+  @apply w-screen h-screen bg-slate-300 grid place-content-center;
+}
+
+.container {
+  background-color: var(--lightBlue);
+  padding: 20px 16px;
+}
+
+.button {
+  margin: 12px 0px;
+  background-color: var(--lightBlue);
+  padding: 10px 8px;
+}
+
+.button:hover {
+  background-color: var(--lightBlue2);
+  transform: translateY(2px);
+}
+
+.button2 {
+  margin: 12px 0px;
+  background-color: var(--darkBlue);
+  padding: 10px 8px;
+  color: white;
+}
+
+.button2:hover {
+  background-color: var(--darkBlue2);
+  transform: translateY(2px);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px 16px;
+}
+
+.displayName {
+  margin: 12px 0px;
+  padding: 10px 8px;
+  border: 1px solid var(--darkBlue);
+}
