@@ -171,7 +171,7 @@ import debounce from 'lodash/debounce';
 
 ## SIMPEL
 
-- `_.startCard()` : mirip capitalize di Tailwind
+- `_.startCase()` : mirip capitalize di Tailwind
   contoh:
 
 ```
