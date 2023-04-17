@@ -140,9 +140,32 @@ myBtn.current.style.backgroundColor = "red"
 
 ## KEUNTUNGAN
 
+1. Pemakaiannya gampang
+2. Lebih readable
+3. Code jadi lebih singkat (tidak perlu bikin custom helper), lebih efisien
+4. Performance lebih baik
+
 ## KATEGORI
 
+1. Array
+2. Collection (Arrays and Objects)
+3. Function
+4. Language
+5. Math
+6. Object
+7. String
+
 ## IMPORTING LODASH
+
+```
+// biasanya seperti ini
+import _ from "lodash"
+
+// Better performance
+import { debounce } from "lodash"
+// Or
+import debounce from 'lodash/debounce';
+```
 
 # METHODS YANG HELPFUL
 
@@ -368,5 +391,3 @@ const applyTwentyPercentDiscount = _.curry(applyDiscount)(0.2);
 console.log(applyTenPercentDiscount(100)); // Output: 90
 console.log(applyTwentyPercentDiscount(100)); // Output: 80
 ```
-
--
