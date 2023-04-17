@@ -245,7 +245,7 @@ console.log(state); // Output: "CA"
 
 ## MEDIUM
 
-## -`_.throttle(function, seconds)` dan `_.debounce(function, seconds)` : nunggu beberapa detik sebelum function dipanggil
+-`_.throttle(function, seconds)` dan `_.debounce(function, seconds)` : nunggu beberapa detik sebelum function dipanggil
 
 contoh:
 
