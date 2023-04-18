@@ -364,6 +364,23 @@ const usersByAge = _.groupBy(users, 'age');
 console.log(usersByAge);
 ```
 
+- `_.pick()` : dipakai jika ada object yang sangat panjang dan ingin dipilih2 properties yang mau dipakai
+  contoh :
+
+```
+const originalObject = {
+  name: 'John',
+  age: 30,
+  occupation: 'Engineer',
+  city: 'New York',
+  country: 'USA'
+};
+
+const newObject = _.pick(originalObject, ['name', 'age', 'occupation']);
+
+console.log(newObject);
+```
+
 ## HARD
 
 - `_.flowRight()` : untuk chaining functions. Cocok kalau ada beberapa functions yang ingin dieksekusi bersamaan tp secara berurutan. Dibacanya dari kanan ke kiri.
