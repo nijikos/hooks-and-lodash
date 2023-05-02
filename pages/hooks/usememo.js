@@ -35,7 +35,7 @@ export default function usememoPage() {
       <p className='description'>
         Dipakai untuk membantu optimasi code dan meningkatkan performa app.
         Hanya dipakai untuk codingan yang rumit/expensive. Kalau engga, engga
-        usah Berupa function dengan "return" statement.
+        usah. Berupa function dengan "return" statement.
       </p>
 
       <div className='grid grid-cols-2 gap-6 mb-4'>
@@ -55,7 +55,9 @@ export default function usememoPage() {
           <p>Sort By Age, useMemo</p>
           <div className='flex flex-col gap-2'>
             {sortByAge.map((item, index) => {
-              return <StudentCard name={item?.name} age={item?.age} />;
+              return (
+                <StudentCard key={index} name={item?.name} age={item?.age} />
+              );
             })}
           </div>
         </div>
